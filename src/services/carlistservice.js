@@ -4,9 +4,15 @@ const getAll = () => {
   return http.get("/cars");
 };
 
+const create = (data) => {
+    return http.post("/cars", data);
+}
+
 const CarListService = {
-    getAll
+    getAll,
+    create
 };
+
 
 export default CarListService;
 /*
